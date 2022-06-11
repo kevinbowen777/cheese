@@ -2,7 +2,7 @@
 name = "appdirs"
 version = "1.4.4"
 description = "A small Python module for determining appropriate platform-specific dirs, e.g. a \"user data dir\"."
-category = "dev"
+category = "main"
 optional = false
 python-versions = "*"
 
@@ -178,6 +178,17 @@ description = "Cross-platform colored terminal text."
 category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+
+[[package]]
+name = "commonmark"
+version = "0.9.1"
+description = "Python parser for the CommonMark Markdown spec"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.extras]
+test = ["flake8 (==3.7.8)", "hypothesis (==3.55.3)"]
 
 [[package]]
 name = "cookiecutter"
@@ -424,6 +435,46 @@ python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,>=2.7"
 mccabe = ">=0.6.0,<0.7.0"
 pycodestyle = ">=2.6.0a1,<2.7.0"
 pyflakes = ">=2.2.0,<2.3.0"
+
+[[package]]
+name = "friendly"
+version = "0.5.26"
+description = "Friendlier tracebacks in any language."
+category = "main"
+optional = false
+python-versions = ">=3.6.1"
+
+[package.dependencies]
+appdirs = "*"
+friendly-styles = "*"
+friendly-traceback = ">=0.5.30"
+pygments = ">=2.6"
+rich = ">=11"
+
+[[package]]
+name = "friendly-styles"
+version = "0.1"
+description = "Pygments styles designed for friendly/friendly-traceback"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+pygments = ">=2"
+
+[[package]]
+name = "friendly-traceback"
+version = "0.5.45"
+description = "Friendlier tracebacks in any language."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+asttokens = ">=2.0.4"
+executing = ">=0.8.3"
+pure-eval = ">=0.2.1"
+stack-data = ">=0.2.0"
 
 [[package]]
 name = "identify"
@@ -1015,6 +1066,21 @@ requests = ">=2.0.0"
 rsa = ["oauthlib[signedtoken] (>=3.0.0)"]
 
 [[package]]
+name = "rich"
+version = "12.4.4"
+description = "Render rich text, tables, progress bars, syntax highlighting, markdown and more to the terminal"
+category = "main"
+optional = false
+python-versions = ">=3.6.3,<4.0.0"
+
+[package.dependencies]
+commonmark = ">=0.9.0,<0.10.0"
+pygments = ">=2.6.0,<3.0.0"
+
+[package.extras]
+jupyter = ["ipywidgets (>=7.5.1,<8.0.0)"]
+
+[[package]]
 name = "six"
 version = "1.16.0"
 description = "Python 2 and 3 compatibility utilities"
@@ -1194,7 +1260,7 @@ python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,>=2.7"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "85c7303ff5129c3d765bce9835a200f85166047b4a02e57e49bb7dea5ac0765d"
+content-hash = "ab28fc65f26b910784a95a47f71251cc7a0e2dbd424465bede25cecaf45cab8e"
 
 [metadata.files]
 appdirs = [
@@ -1263,6 +1329,10 @@ click = [
 colorama = [
     {file = "colorama-0.4.4-py2.py3-none-any.whl", hash = "sha256:9f47eda37229f68eee03b24b9748937c7dc3868f906e8ba69fbcbdd3bc5dc3e2"},
     {file = "colorama-0.4.4.tar.gz", hash = "sha256:5941b2b48a20143d2267e95b1c2a7603ce057ee39fd88e7329b0c292aa16869b"},
+]
+commonmark = [
+    {file = "commonmark-0.9.1-py2.py3-none-any.whl", hash = "sha256:da2f38c92590f83de410ba1a3cbceafbc74fee9def35f9251ba9a971d6d66fd9"},
+    {file = "commonmark-0.9.1.tar.gz", hash = "sha256:452f9dc859be7f06631ddcb328b6919c67984aca654e5fefb3914d54691aed60"},
 ]
 cookiecutter = [
     {file = "cookiecutter-1.7.3-py2.py3-none-any.whl", hash = "sha256:f8671531fa96ab14339d0c59b4f662a4f12a2ecacd94a0f70a3500843da588e2"},
@@ -1379,6 +1449,18 @@ filelock = [
 flake8 = [
     {file = "flake8-3.8.3-py2.py3-none-any.whl", hash = "sha256:15e351d19611c887e482fb960eae4d44845013cc142d42896e9862f775d8cf5c"},
     {file = "flake8-3.8.3.tar.gz", hash = "sha256:f04b9fcbac03b0a3e58c0ab3a0ecc462e023a9faf046d57794184028123aa208"},
+]
+friendly = [
+    {file = "friendly-0.5.26-py3-none-any.whl", hash = "sha256:52a9c8f82b9207666292786dc7af348094790bdcbf43b31c49ece47165805208"},
+    {file = "friendly-0.5.26.tar.gz", hash = "sha256:0f126043c0621aef2ee7c7296aac0ede572731da44347f969eaac510bbdc5118"},
+]
+friendly-styles = [
+    {file = "friendly_styles-0.1-py3-none-any.whl", hash = "sha256:753fcb7a0157d58659b45ff49f1ab1bbb7e666a630f6b6da982931f128a86b93"},
+    {file = "friendly_styles-0.1.tar.gz", hash = "sha256:4babd7780f69863766773f1f7f9f0c4e2f5ba0ce124407255ba15d0dd6858c6b"},
+]
+friendly-traceback = [
+    {file = "friendly-traceback-0.5.45.tar.gz", hash = "sha256:1ecf8b1d8c4d14280bd5c20383b42ccfe0913b5cea57429de33e32fb3786270b"},
+    {file = "friendly_traceback-0.5.45-py3-none-any.whl", hash = "sha256:72bfc28ddc62d7928b88b836e2c9193a2fe3bafb19688c13839f9dc1781f64ad"},
 ]
 identify = [
     {file = "identify-2.5.1-py2.py3-none-any.whl", hash = "sha256:0dca2ea3e4381c435ef9c33ba100a78a9b40c0bab11189c7cf121f75815efeaa"},
@@ -1824,6 +1906,10 @@ requests = [
 requests-oauthlib = [
     {file = "requests-oauthlib-1.3.1.tar.gz", hash = "sha256:75beac4a47881eeb94d5ea5d6ad31ef88856affe2332b9aafb52c6452ccf0d7a"},
     {file = "requests_oauthlib-1.3.1-py2.py3-none-any.whl", hash = "sha256:2577c501a2fb8d05a304c09d090d6e47c306fef15809d102b327cf8364bddab5"},
+]
+rich = [
+    {file = "rich-12.4.4-py3-none-any.whl", hash = "sha256:d2bbd99c320a2532ac71ff6a3164867884357da3e3301f0240090c5d2fdac7ec"},
+    {file = "rich-12.4.4.tar.gz", hash = "sha256:4c586de507202505346f3e32d1363eb9ed6932f0c2f63184dea88983ff4971e2"},
 ]
 six = [
     {file = "six-1.16.0-py2.py3-none-any.whl", hash = "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"},
