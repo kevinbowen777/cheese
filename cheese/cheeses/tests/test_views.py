@@ -51,3 +51,15 @@ def test_good_cheese_detail_view(rf):
     response = callable_obj(request, slug=cheese.slug)
     # Test that the response is valid
     assertContains(response, cheese.name)
+
+def test_good_cheese_create_view(rf, admin_user):
+    # Order some cheese from the CheeseFactory
+    cheese = CheeseFactory()
+    # Make a request for our new cheese
+    request = rf.get(reverse("cheeses:add"))
+    # Add an authenticated user
+    request.user = admin_user
+    # Use the request to get the response
+    response = CheeseCreateView.as_view()(request)
+    # Test that the response is valid
+    assert response.status_code == 200
