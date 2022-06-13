@@ -15,7 +15,7 @@ urlpatterns = [
         name='add'
     ),
     path(
-        route='<slug:slug>',
+        route='<slug:slug>/',
         view=views.CheeseDetailView.as_view(),
         name='detail'
     ),
