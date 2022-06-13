@@ -15,7 +15,7 @@ from ..views import (
     CheeseListView,
     CheeseDetailView,
 )
-from .factories import CheeseFactory
+from .factories import CheeseFactory, cheese
 
 pytestmark = pytest.mark.django_db
 
@@ -39,9 +39,8 @@ def test_good_cheese_list_view_expanded(rf):
     #   HTML and has a 200 response code
     assertContains(response, 'Cheese List')
 
-def test_good_cheese_detail_view(rf):
+def test_good_cheese_detail_view(rf, cheese):
     # Order some cheese from the CheeseFactory
-    cheese = CheeseFactory()
     # Make a request for our new cheese
     url = reverse("cheeses:detail", kwargs={"slug": cheese.slug})
     request = rf.get(url)
@@ -52,9 +51,8 @@ def test_good_cheese_detail_view(rf):
     # Test that the response is valid
     assertContains(response, cheese.name)
 
-def test_good_cheese_create_view(rf, admin_user):
+def test_good_cheese_create_view(rf, cheese, admin_user):
     # Order some cheese from the CheeseFactory
-    cheese = CheeseFactory()
     # Make a request for our new cheese
     request = rf.get(reverse("cheeses:add"))
     # Add an authenticated user
@@ -77,8 +75,7 @@ def test_cheese_list_contains_2_cheeses(rf):
     assertContains(response, cheese1.name)
     assertContains(response, cheese2.name)
 
-def test_detail_contains_cheese_data(rf):
-    cheese = CheeseFactory()
+def test_detail_contains_cheese_data(rf, cheese):
     # Make a request for our new cheese
     url = reverse("cheeses:detail",
                   kwargs={'slug': cheese.slug})
