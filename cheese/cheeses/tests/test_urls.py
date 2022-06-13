@@ -26,3 +26,13 @@ def test_add_reverse():
 def test_add_resolve():
     """/cheeses/add/ should resolve to cheeses:add."""
     assert resolve("/cheeses/add/").view_name == "cheeses:add"
+
+def test_detail_reverse(cheese):
+    """cheeses:detail should reverse to /cheeses/cheeseslug/."""
+    url = reverse("cheeses:detail", kwargs={"slug": cheese.slug})
+    assert url == f"/cheeses/{cheese.slug}/"
+
+def test_detail_resolve(cheese):
+    """/cheeses/cheeseslug should reverse to cheeses:detail."""
+    url = f"/cheeses/{cheese.slug}/"
+    assert resolve(url).view_name == "cheeses:detail"
