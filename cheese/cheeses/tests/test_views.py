@@ -14,6 +14,7 @@ from ..views import (
     CheeseCreateView,
     CheeseListView,
     CheeseDetailView,
+    CheeseUpdateView,
 )
 from .factories import CheeseFactory, cheese
 
@@ -111,3 +112,16 @@ def test_cheese_create_correct_title(rf, admin_user):
     request.user = admin_user
     response = CheeseCreateView.as_view()(request)
     assertContains(response, 'Add Cheese')
+
+def test_good_cheese_update_view(rf, admin_user, cheese):
+    url = reverse("cheeses:update",
+    kwargs={'slug': cheese.slug})
+    # Make a request for our new cheese
+    request = rf.get(url)
+    # Add an authenticated user
+    request.user = admin_user
+    # Use the request to get the response
+    callable_obj = CheeseUpdateView.as_view()
+    response = callable_obj(request, slug=cheese.slug)
+    # Test that the response is valid
+    assertContains(response, "Update Cheese")
