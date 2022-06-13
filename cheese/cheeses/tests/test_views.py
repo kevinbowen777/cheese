@@ -38,3 +38,16 @@ def test_good_cheese_list_view_expanded(rf):
     # Test that the HTTP response has 'Cheese List' in the
     #   HTML and has a 200 response code
     assertContains(response, 'Cheese List')
+
+def test_good_cheese_detail_view(rf):
+    # Order some cheese from the CheeseFactory
+    cheese = CheeseFactory()
+    # Make a request for our new cheese
+    url = reverse("cheeses:detail", kwargs={"slug": cheese.slug})
+    request = rf.get(url)
+
+    # Use the request to get the response
+    callable_obj = CheeseDetailView.as_view()
+    response = callable_obj(request, slug=cheese.slug)
+    # Test that the response is valid
+    assertContains(response, cheese.name)
