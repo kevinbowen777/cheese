@@ -104,3 +104,10 @@ def test_cheese_create_form_valid(rf, admin_user):
     assert cheese.description == "A salty hard cheese"
     assert cheese.firmness == Cheese.Firmness.HARD
     assert cheese.creator == admin_user
+
+def test_cheese_create_correct_title(rf, admin_user):
+    """Page title for CheeseCreateView should be Add Cheese."""
+    request = rf.get(reverse('cheeses:add'))
+    request.user = admin_user
+    response = CheeseCreateView.as_view()(request)
+    assertContains(response, 'Add Cheese')
