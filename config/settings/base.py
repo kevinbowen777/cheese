@@ -291,3 +291,5 @@ SOCIALACCOUNT_ADAPTER = (
 
 # Your stuff...
 # ------------------------------------------------------------------------------
+# Needed after upgrade to Django 3.2.14
+DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
