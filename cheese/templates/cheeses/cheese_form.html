@@ -6,7 +6,7 @@
 {% block content %}
 {% with action=view.action|default:"Add" %}
   <h2>{{ action }} Cheese</h2>
-    <form method="post" action=".">
+    <form class="col-md-6" method="post" action=".">
       {% csrf_token %}
       {{ form|crispy }}
       <button type="submit" class="btn btn-primary">{{ action }}</button>
