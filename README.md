@@ -1,6 +1,16 @@
-## cheese - A cheese index application
+## cheese 
 
-chees is a basic demonstration of Django functionality using a [Cookiecutter](https://github.com/feldroy/django-crash-starter) template.
+<div align="center">
+
+  [![Status](https://img.shields.io/badge/status-active-success.svg)]() 
+  [![GitHub Issues](https://img.shields.io/github/issues/kevinbowen777/cheese.svg)](https://github.com/kevinbowen777/cheese/issues)
+  [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
+
+</div>
+
+- A cheese index application
+
+cheese is a basic demonstration of Django functionality using a [Cookiecutter](https://github.com/feldroy/django-crash-starter) template.
 
 ### Installation
  - `git clone https://github.com/kevinbowen777/cheese.git`
@@ -22,9 +32,6 @@ chees is a basic demonstration of Django functionality using a [Cookiecutter](ht
 ---
 ### Screenshots
 
-
----
-[![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/kevinbowen777/cheese/blob/master/LICENSE)
 ---
 ### Reporting Bugs
 
