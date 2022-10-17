@@ -12,23 +12,49 @@
 
 cheese is a basic demonstration of Django functionality using a [Cookiecutter](https://github.com/feldroy/django-crash-starter) template.
 
-### Installation
- - `git clone https://github.com/kevinbowen777/cheese.git`
- - `cd django_start`
- - `pip install -r requirements/local.txt`
- - `python manage.py runserver`
- - Open browser to http://127.0.0.1:8000`
-
+##### Table of Contents
+ - [Features](#features)
+ - [Installation](#installation)
+ - [Testing](#testing)
+ - [Application Demo](#application-demo)
+ - [Screenshots](#screenshots)
+ - [Reporting Bugs](#reporting-bugs)
 
 ---
 ## Features
  - None. Two simple web pages build with Django
 
-### Live Demo on Heroku:
- - TBD
-### Docker Container Image:
+---
 
- - N/A
+### Installation
+ - `git clone https://github.com/kevinbowen777/cheese.git`
+ - `cd cheese`
+ - Local installation:
+     - `poetry shell`
+     - `poetry install`
+     - `python manage.py migrate`
+     - `python manage.py createsuperuser`
+     - `python manage.py runserver`
+ - Docker installation:
+     - `docker-compose up --build`
+     - `docker-compose python manage.py migrate`
+     - `docker-compose python manage.py createsuperuser`
+ - Browse to http://127.0.0.1:8000 or http://127.0.0.1:8000/admin/
+
+---
+
+### Testing
+ - `docker-compose exec web python manage.py test`
+ - `coverage run -m pytest`
+ - Nox (includes sessions for black, lint, safety, tests)
+     - testing supported for Python 3.9, 3.10, 3.11
+     - e.g. `nox`, `nox -rs lint-3.11`, `nox -s tests`
+
+---
+
+### Application Demo
+ - TBD
+ 
 ---
 ### Screenshots
 
