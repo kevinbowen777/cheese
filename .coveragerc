@@ -1,5 +1,5 @@
 [run]
-include = cheese/*
+include = cheese/*, "cheese/users", "config/settings"
 omit = *migrations*, *tests*
 disable_warnings = already-imported
 plugins =
