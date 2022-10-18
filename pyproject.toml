@@ -15,7 +15,7 @@ exclude = '''
 '''
 
 [tool.coverage.paths]
-source = ["cheeses/users", "cheese/cheeses", "config"]
+source = ["cheeses/users", "cheese/cheeses", "config/settings"]
 
 [tool.coverage.run]
 branch = true
@@ -71,6 +71,7 @@ psycopg2-binary = "^2.8.6"
 friendly = "^0.5.26"
 colorama = "^0.4.4"
 django-countries = "^7.3.2"
+django-extensions = "^3.2.0"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^4.0.1"
@@ -85,9 +86,14 @@ pytest-sugar = "^0.9.4"
 django-test-plus = "^2.2.0"
 factory-boy = "3.0.1"
 django-debug-toolbar = "^3.1"
-django-extensions = "^3.2.0"
 django-coverage-plugin = "^2.0.3"
 pytest-django = "^4.5.2"
+nox = "^2022.8.7"
+flake8-bandit = "^3.0.0"
+flake8-black = "^0.3.3"
+flake8-bugbear = "^22.6.22"
+flake8-import-order = "^0.18.1"
+safety = "^2.1.0"
 
 [tool.pytest.ini_options]
 DJANGO_SETTINGS_MODULE = "config.settings"
