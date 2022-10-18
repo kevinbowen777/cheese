@@ -1,14 +1,14 @@
-import pytest
-from django.test import RequestFactory
-from django.contrib.messages.middleware import MessageMiddleware  # noqa:F401
-from django.contrib.sessions.middleware import SessionMiddleware  # noqa:F401
-from django.urls import reverse
-
 from cheese.users.models import User
 from cheese.users.views import (
     UserRedirectView,
     UserUpdateView,
 )
+from django.test import RequestFactory
+from django.urls import reverse
+import pytest
+from django.contrib.messages.middleware import MessageMiddleware  # noqa:F401
+from django.contrib.sessions.middleware import SessionMiddleware  # noqa:F401
+
 
 pytestmark = pytest.mark.django_db
 
@@ -22,7 +22,9 @@ class TestUserUpdateView:
         https://github.com/pytest-dev/pytest-django/pull/258
     """
 
-    def test_get_success_url(self, user: User, request_factory: RequestFactory):
+    def test_get_success_url(
+        self, user: User, request_factory: RequestFactory
+    ):
         view = UserUpdateView()
         request = request_factory.get("/fake-url/")
         request.user = user
@@ -59,7 +61,9 @@ class TestUserUpdateView:
 
 
 class TestUserRedirectView:
-    def test_get_redirect_url(self, user: User, request_factory: RequestFactory):
+    def test_get_redirect_url(
+        self, user: User, request_factory: RequestFactory
+    ):
         view = UserRedirectView()
         request = request_factory.get("/fake-url")
         request.user = user

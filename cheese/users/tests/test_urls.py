@@ -1,7 +1,7 @@
-import pytest
-from django.urls import reverse, resolve
-
 from cheese.users.models import User
+from django.urls import resolve, reverse
+import pytest
+
 
 pytestmark = pytest.mark.django_db
 
@@ -11,10 +11,7 @@ def test_detail(user: User):
         reverse("users:detail", kwargs={"username": user.username})
         == f"/users/{user.username}/"
     )
-    assert (
-        resolve(f"/users/{user.username}/").view_name
-        == "users:detail"
-    )
+    assert resolve(f"/users/{user.username}/").view_name == "users:detail"
 
 
 def test_update():
@@ -24,6 +21,4 @@ def test_update():
 
 def test_redirect():
     assert reverse("users:redirect") == "/users/~redirect/"
-    assert (
-        resolve("/users/~redirect/").view_name == "users:redirect"
-    )
+    assert resolve("/users/~redirect/").view_name == "users:redirect"
