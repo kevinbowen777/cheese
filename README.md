@@ -12,6 +12,8 @@
 
 cheese is a basic demonstration of Django functionality using a [Cookiecutter](https://github.com/feldroy/django-crash-starter) template.
 
+[Mirror repository](https://gitlab.com/kevinbowen/cheese.git)
+
 ##### Table of Contents
  - [Features](#features)
  - [Installation](#installation)
