@@ -1079,19 +1079,19 @@ flake8 = "*"
 
 [[package]]
 name = "friendly"
-version = "0.5.42"
+version = "0.7.20"
 description = "Friendlier tracebacks in any language."
 category = "main"
 optional = false
 python-versions = ">=3.6.1"
 files = [
-    {file = "friendly-0.5.42-py3-none-any.whl", hash = "sha256:e44de43d7c35d0a2d27c89f89d5c43e71566995d36483ec43f23df0ce4c5f150"},
-    {file = "friendly-0.5.42.tar.gz", hash = "sha256:e0f1d32a32f502943a835474a7b275ecf799d4de793e1c6f24fd9b65d2b07ca7"},
+    {file = "friendly-0.7.20-py3-none-any.whl", hash = "sha256:bbab267154b742c5def3d35b6ddb7a3c0101a541ec771dd5f4842ff324c5c7fe"},
+    {file = "friendly-0.7.20.tar.gz", hash = "sha256:25ac8cb00a510c697c12af90c51a7ed6e6663a7fab7539f00b5f78c61a47e965"},
 ]
 
 [package.dependencies]
-friendly-styles = "*"
-friendly-traceback = ">=0.5.51"
+friendly-styles = ">=0.2"
+friendly-traceback = ">=0.7.43"
 platformdirs = "*"
 pygments = ">=2.6"
 rich = ">=11"
@@ -2933,4 +2933,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "ddb4b6ee7fb258f2e650232d27078fbe1684868a6d39e63157f185a5f73e1083"
+content-hash = "23e9790d636c1bccbeef4f656d939b12c4b619bb4e9b44cf6d8346b92d54921c"
