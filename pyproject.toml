@@ -76,7 +76,7 @@ django-extensions = "^3.2.0"
 [tool.poetry.dev-dependencies]
 flake8 = "^6.0.0"
 coverage = "^7.0.0"
-black = "^22.6.0"
+black = "^23.0.0"
 pylint-django = "^2.3.0"
 pre-commit = "^3.0.0"
 mypy = "^1.0.0"
