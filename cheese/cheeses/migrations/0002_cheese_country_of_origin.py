@@ -5,7 +5,6 @@ import django_countries.fields
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
         ("cheeses", "0001_initial"),
     ]

@@ -1,7 +1,10 @@
 from cheese.users.tests.factories import UserFactory
+
 from django.template.defaultfilters import slugify
+
 import factory
 import factory.fuzzy
+
 import pytest
 
 from ..models import Cheese

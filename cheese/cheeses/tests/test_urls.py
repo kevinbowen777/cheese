@@ -1,6 +1,6 @@
 from django.urls import resolve, reverse
-import pytest
 
+import pytest
 
 from .factories import CheeseFactory
 

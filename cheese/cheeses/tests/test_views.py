@@ -1,4 +1,5 @@
 from django.urls import reverse
+
 import pytest
 from pytest_django.asserts import (  # noqa:F401
     assertContains,

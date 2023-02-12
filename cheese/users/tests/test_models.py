@@ -1,4 +1,5 @@
 from cheese.users.models import User
+
 import pytest
 
 

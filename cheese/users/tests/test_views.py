@@ -3,8 +3,10 @@ from cheese.users.views import (
     UserRedirectView,
     UserUpdateView,
 )
+
 from django.test import RequestFactory
 from django.urls import reverse
+
 import pytest
 from django.contrib.messages.middleware import MessageMiddleware  # noqa:F401
 from django.contrib.sessions.middleware import SessionMiddleware  # noqa:F401

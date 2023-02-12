@@ -1,5 +1,7 @@
 from cheese.users.models import User
+
 from django.urls import resolve, reverse
+
 import pytest
 
 
