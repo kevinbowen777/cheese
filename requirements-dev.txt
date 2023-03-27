@@ -309,8 +309,8 @@ distlib==0.3.6 ; python_version >= "3.10" and python_version < "4.0" \
 django==4.1.7 ; python_version >= "3.10" and python_version < "4.0" \
     --hash=sha256:44f714b81c5f190d9d2ddad01a532fe502fa01c4cb8faf1d081f4264ed15dcd8 \
     --hash=sha256:f2f431e75adc40039ace496ad3b9f17227022e8b11566f4b363da44c7e44761e
-django-allauth==0.52.0 ; python_version >= "3.10" and python_version < "4.0" \
-    --hash=sha256:e380661ceafe55734c40102819ae720403027036f28e9f9827f0faeddc24ed5f
+django-allauth==0.53.1 ; python_version >= "3.10" and python_version < "4.0" \
+    --hash=sha256:1336f430d5797e7484dfddc6ddb1d5f61f04bb24a9519b64756847d089b2ffba
 django-autoslug==1.9.8 ; python_version >= "3.10" and python_version < "4.0" \
     --hash=sha256:26459eeddec207e307c55777a10fc25d17f4978753695340b16a17ed248a6f70 \
     --hash=sha256:bae66c27d35615f472865b99c4d107f3b3add3d22ee337e84960fc07694abd45
