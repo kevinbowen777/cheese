@@ -4,13 +4,17 @@ Base settings to build other settings files upon.
 
 from pathlib import Path
 
-import environ
+from environs import Env
+
+# env.read_env()
+# import environ
 
 # cheese/
 BASE_DIR = Path(__file__).resolve(strict=True).parent.parent.parent
 APPS_DIR = BASE_DIR / "cheese"
 
-env = environ.Env()
+# env = environ.Env()
+env = Env()
 
 ENV_FILE = BASE_DIR / ".env"
 if Path(ENV_FILE).exists():
@@ -49,11 +53,25 @@ DATABASES = {
     # The DATABASE_URL environment variables
     # expect a value in the following format:
     # DATABASE_URL=postgres://user:password@hostname_or_ip:port/database_name
-    "default": env.db(
-        "DATABASE_URL",
-        default="postgres:///cheese",
-    )
+    "default": {
+        "ENGINE": env.str("ENGINE_DB", "django.db.backends.postgresql"),
+        "DATABASE_URL": env.dj_db_url(
+            "DATABASE_URL", default="postgres://postgres@db/postgres"
+        ),
+        "NAME": env.str("POSTGRES_DB", "postgres"),
+        "USER": env.str("POSTGRES_USER", default="fakeuser"),
+        "PASSWORD": env.str("POSTGRES_PASSWORD", "password"),
+        "HOST": env.str("POSTGRES_HOST", "db"),
+        "PORT": env.int("POSTGRES_PORT", "5432"),
+    }
 }
+
+"""
+"default": env.db(
+    "DATABASE_URL",
+    default="postgres:///cheese",
+)
+"""
 DATABASES["default"]["ATOMIC_REQUESTS"] = True
 
 # URLS
