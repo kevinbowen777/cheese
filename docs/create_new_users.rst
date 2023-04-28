@@ -9,7 +9,7 @@ In the application directory, run the following command:
 
 .. code-block:: console
 
-    $ python manage.py shell_plus
+    $ python man# age.py shell_plus
 
 Sample user list
 ----------------
@@ -23,7 +23,7 @@ Sample user list
         first_name = "John",
         last_name = "Doe",
         email = "john@example.com",
-        age = "69",
+        # age = "69",
         password="P@s5WoRd!",
     )
     User.objects.create_user(
@@ -32,7 +32,7 @@ Sample user list
         first_name = "Susan",
         last_name = "Sontag",
         email = "susan@example.com",
-        age = "71",
+        # age = "71",
         password="P@s5WoRd!",
     )
     User.objects.create_user(
@@ -41,7 +41,7 @@ Sample user list
         first_name = "Mary",
         last_name = "Shelley",
         email = "mary@example.com",
-        age = "53",
+        # age = "53",
         password="P@s5WoRd!",
     )
     User.objects.create_user(
@@ -50,7 +50,7 @@ Sample user list
         first_name = "David",
         last_name = "Hockney",
         email = "david@example.com",
-        age = "84",
+        # age = "84",
         password="P@s5WoRd!",
     )
     User.objects.create_user(
@@ -59,7 +59,7 @@ Sample user list
         first_name = "Alice",
         last_name = "Coltrane",
         email = "alice@example.com",
-        age = "69",
+        # age = "69",
         password="P@s5WoRd!",
     )
     User.objects.create_user(
@@ -68,7 +68,7 @@ Sample user list
         first_name = "Test",
         last_name = "User",
         email = "testuser@example.com",
-        age = "23",
+        # age = "23",
         password="P@s5WoRd!",
         is_staff=True,
     )
