@@ -34,7 +34,7 @@ Features
    * `Debug-toolbar <https://pypi.org/project/django-debug-toolbar/>`_ available. See notes in `config/settings.py` for enabling.
    * Examples of using `Factories <https://pypi.org/project/factory-boy/>`_ & `pytest <https://pypi.org/project/pytest/>`_ fixtures in account app testing
    * `shell_plus <https://django-extensions.readthedocs.io/en/latest/shell_plus.html>`_ with `IPython <https://pypi.org/project/ipython/>`_ via `django-extensions <https://pypi.python.org/pypi/django-extensions/>`_ package
-   * `Nox <https://pypi.org/project/nox/>`_ testing sessions for latest Python 3.9, 3.10, and 3.11
+   * `Nox <https://pypi.org/project/nox/>`_ testing sessions for latest Python 3.9, 3.10, 3.11, and 3.12
 
      * `black <https://pypi.org/project/black/>`_
      * `Sphinx <https://pypi.org/project/Sphinx/>`_ documentaion generation
@@ -65,7 +65,7 @@ Local installation
 
    $ poetry shell
    $ poetry install
-   $ createdb cheese (Requires Postgres 13)
+   $ createdb cheese (Requires Postgres 15)
    $ python manage.py migrate
    $ python manage.py createsuperuser
    
@@ -78,6 +78,19 @@ Docker installation
    $ docker-compose up --build
    $ docker-compose python manage.py migrate
    $ docker-compose python manage.py createsuperuser
+   Additional commands:
+   $ docker compose exec web python manage.py shell_plus
+     (loads Django shell autoloading project models & classes)
+   $ docker run -it django-start-web bash`
+     (CLI access to container)
+
+Pre-commit installation
+-----------------------
+   To add the hook, run the following command in the poetry shell:
+
+.. code-block:: console
+
+   $ pre-commit install
 
 
 Usage
@@ -101,8 +114,11 @@ Testing
    $ coverage run -m pytest
    $ nox --list-sessions
    $ nox
-   $ nox -rs lint-3.11
-   $ nox -s tests
+   $ nox -s black-3.12 
+   $ nox -s docs-3.11 
+   $ nox -rs lint-3.9  (Use the 'r' flag to reuse existing session)
+   $ nox -s safety  (will run tests against all Python versions)
+   $ nox -s tests 
 
 Application Demo
 ----------------

@@ -35,7 +35,7 @@ cheese is a basic demonstration of Django functionality using a [Cookiecutter](h
      - Debug-toolbar available
      - Examples of using Factories & pytest fixtures in account app testing
      - `shell_plus` with IPython via `django-extensions` package
-     - Nox testing sessions for latest Python 3.9, 3.10, and 3.11
+     - Nox testing sessions for latest Python 3.9, 3.10, 3.11, and 3.12
          - black
          - Sphinx documentaion generation
          - linting
@@ -53,7 +53,7 @@ cheese is a basic demonstration of Django functionality using a [Cookiecutter](h
  - Local installation:
      - `poetry shell`
      - `poetry install`
-     - `createdb cheeses` (Requires Postgresql 13)
+     - `createdb cheeses` (Requires Postgresql 15)
      - `python manage.py migrate`
      - `python manage.py createsuperuser`
      - `python manage.py runserver`
@@ -62,6 +62,9 @@ cheese is a basic demonstration of Django functionality using a [Cookiecutter](h
      - `docker-compose python manage.py migrate`
      - `docker-compose python manage.py createsuperuser`
  - Browse to http://127.0.0.1:8000 or http://127.0.0.1:8000/admin/
+ - Pre-commit:
+     - To add the hook, run the following command in the poetry shell:
+         - `pre-commit install`
 
 ---
 
@@ -69,7 +72,7 @@ cheese is a basic demonstration of Django functionality using a [Cookiecutter](h
  - `docker-compose exec web python manage.py test`
  - `coverage run -m pytest`
  - Nox (includes sessions for black, lint, safety, tests)
-     - testing supported for Python 3.9, 3.10, 3.11
+     - testing supported for Python 3.9, 3.10, 3.11, 3.12
      - e.g. `nox`, `nox -rs lint-3.11`, `nox -s tests`
 
 ---
