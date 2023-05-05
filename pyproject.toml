@@ -97,6 +97,8 @@ flake8-bugbear = "^23.0.0"
 flake8-import-order = "^0.18.1"
 safety = "2.4.0b1"
 Sphinx = "^7.0.0"
+pip-audit = "^2.5.5"
+pip-check = "^2.8.1"
 
 [tool.pytest.ini_options]
 DJANGO_SETTINGS_MODULE = "config.settings"
