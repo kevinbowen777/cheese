@@ -1,14 +1,13 @@
-from django.urls import reverse
-
 import pytest
+from django.contrib.sessions.middleware import SessionMiddleware  # noqa:F401
+from django.test import RequestFactory  # noqa:F401
+from django.urls import reverse
 from pytest_django.asserts import (  # noqa:F401
     assertContains,
     assertRedirects,  # noqa:F401
 )
 
-from django.contrib.sessions.middleware import SessionMiddleware  # noqa:F401
 from cheese.users.models import User  # noqa:F401
-from django.test import RequestFactory  # noqa:F401
 
 from ..models import Cheese
 from ..views import (
@@ -17,7 +16,7 @@ from ..views import (
     CheeseListView,
     CheeseUpdateView,
 )
-from .factories import cheese, CheeseFactory  # noqa:F401
+from .factories import CheeseFactory, cheese  # noqa:F401
 
 pytestmark = pytest.mark.django_db
 

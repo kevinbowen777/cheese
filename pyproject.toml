@@ -114,7 +114,7 @@ select = [
     "DJ",   # flake8-django
     "E",    # pycodestyle errors
     "F",    # pyflakes
-    # "I",    # isort
+    "I",    # isort
     "S",    # flake8-bandit
     "W",    # pycodestyle warnings
     # "RUF",  # ruff checks

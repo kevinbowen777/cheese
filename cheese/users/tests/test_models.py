@@ -1,7 +1,6 @@
-from cheese.users.models import User
-
 import pytest
 
+from cheese.users.models import User
 
 pytestmark = pytest.mark.django_db
 

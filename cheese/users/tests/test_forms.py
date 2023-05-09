@@ -1,8 +1,7 @@
-from cheese.users.forms import UserCreationForm
-from cheese.users.tests.factories import UserFactory
-
 import pytest
 
+from cheese.users.forms import UserCreationForm
+from cheese.users.tests.factories import UserFactory
 
 pytestmark = pytest.mark.django_db
 

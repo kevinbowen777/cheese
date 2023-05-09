@@ -1,8 +1,7 @@
 import pytest
 
-from .factories import CheeseFactory
 from ..models import Cheese  # noqa:F401
-
+from .factories import CheeseFactory
 
 # Connects our tests with our database
 pytestmark = pytest.mark.django_db

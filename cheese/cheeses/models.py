@@ -1,11 +1,8 @@
 from autoslug import AutoSlugField
-
 from django.conf import settings
 from django.db import models
 from django.urls import reverse
-
 from django_countries.fields import CountryField
-
 from model_utils.models import TimeStampedModel
 
 

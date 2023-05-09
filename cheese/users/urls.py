@@ -1,11 +1,10 @@
+from django.urls import path
+
 from cheese.users.views import (
     user_detail_view,
     user_redirect_view,
     user_update_view,
 )
-
-from django.urls import path
-
 
 app_name = "users"
 urlpatterns = [
