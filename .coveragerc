@@ -1,6 +1,16 @@
 [run]
 include = cheese/*, "cheese/users", "config/settings"
-omit = *migrations*, *tests*
 disable_warnings = already-imported
+omit =
+    *conftest.py,
+    context_processors.py,
+    *manage.py,
+    *settings*.py,
+    *test.py,
+    *wsgi.py,
+    */__init__.py,
+    */migrations/*,
+    */factories.py,
+    */tests/*,
 plugins =
     django_coverage_plugin
