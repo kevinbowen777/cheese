@@ -1,7 +1,9 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block title %}User: {{ object.username }}{% endblock %}
+{% block title %}
+  User: {{ object.username }}
+{% endblock title %}
 
 {% block content %}
 <div class="container">
@@ -33,7 +35,5 @@
 <!-- End Action buttons -->
 {% endif %}
 
-
 </div>
 {% endblock content %}
-
