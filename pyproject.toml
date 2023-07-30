@@ -57,6 +57,7 @@ friendly = "^0.7.0"
 colorama = "^0.4.4"
 django-countries = "^7.3.2"
 django-extensions = "^3.2.0"
+django-types = "^0.17.0"
 
 [tool.poetry.group.dev.dependencies]
 coverage = "^7.0.0"
@@ -132,6 +133,41 @@ files=["cheese/templates/"]
 indent=2
 max_line_length=120
 preserve_blank_lines=true
+
+[tool.pyright]
+include = ["config/settings", "cheese/cheeses", "cheese/users",]
+exclude = ["**/tests",
+    "**/__pycache__",
+    "**/migrations",
+]
+ignore = ["docs/_build"]
+defineConstant = { DEBUG = true }
+stubPath = ""
+venv = "cheese-bLzsY7Z3-py3.11"
+venvPath = "../../../venvs"
+
+typeCheckingMode = "basic"
+useLibraryCodeForTypes = true
+strictListInference = true
+strictDictionaryInference = true
+reportConstantRedefinition = "error"
+reportOptionalCall = "error"
+reportOptionalContextManager = "error"
+reportOptionalIterable = "error"
+reportOptionalMemberAccess = "error"
+reportMissingImports = true
+reportOptionalOperand = "error"
+reportOptionalSubscript = "error"
+reportUnnecessaryCast = "warning"
+reportUnnecessaryComparison = "error"
+reportUnnecessaryTypeIgnoreComment = "warning"
+
+pythonVersion = "3.11"
+pythonPlatform = "Linux"
+
+executionEnvironments = [
+  { root = ".", pythonVersion = "3.11", extraPaths = [ "cheese/users", "config/settings", "cheese/cheeses" ] },
+]
 
 [tool.pytest.ini_options]
 DJANGO_SETTINGS_MODULE = "config.settings"
