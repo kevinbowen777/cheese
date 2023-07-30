@@ -26,25 +26,25 @@ cheese is a basic demonstration of Django functionality using a [Cookiecutter](h
 ## Features
  - Application
      - Add cheese entries with description, quality, and country of origin
-     - User registration with email verification & social(GitHub) login
-     - Bootstrap4 & crispy-forms decorations
-     - Customizable user profile pages with bio, profile pic, & country flags
+     - [Bootstrap4](https://pypi.org/project/django-bootstrap4/) & [crispy-forms](https://pypi.org/project/django-crispy-forms/) decorations
+     - Customizable user profile pages with bio, profile pic, & [country flags](https://pypi.python.org/pypi/django-countries)
+     - For additional links to package resources used in this repository, see the [Package Index](docs/package_index.md)
  - Dev/testing
-     - basic module testing templates
-     - Coverage reports
-     - Debug-toolbar available
-     - Examples of using Factories & pytest fixtures in account app testing
-     - `shell_plus` with IPython via `django-extensions` package
-     - Nox testing sessions for latest Python 3.9, 3.10, 3.11, and 3.12
-         - black
-         - Sphinx documentaion generation
-         - linting
-             - flake8
-             - flake8-bugbear
-             - flake8-docstrings
-             - flake8-import-order
-         - safety(python package vulnerability testing)
-         - pytest sessions with coverage
+     - Basic module testing templates
+     - [Coverage](https://pypi.org/project/coverage/) reports in `htmlcov` directory
+     - [Debug-toolbar](https://pypi.org/project/django-debug-toolbar/) available. See notes in `config/settings.py` for enabling.
+     - Examples of using [Factories](https://pypi.org/project/factory-boy/) & [pytest](https://pypi.org/project/pytest/) fixtures in account app testing
+     - [shell_plus](https://django-extensions.readthedocs.io/en/latest/shell_plus.html) with [IPython](https://pypi.org/project/ipython/) via [django-extensions](https://pypi.python.org/pypi/django-extensions/) package
+     - [Pre-commit](https://github.com/pre-commit/pre-commit)
+     - [Nox](https://pypi.org/project/nox/) testing sessions for latest Python 3.9, 3.10, 3.11, and 3.12 
+         - [black](https://pypi.org/project/black/) (`nox -s black`)
+         - [Sphinx](https://pypi.org/project/Sphinx/) documentation generation (`nox -s docs`)
+         - linting (`nox -s lint`)
+             - [ruff](https://pypi.org/project/ruff/)
+             - [djlint](https://pypi.org/project/djlint/)
+         - [safety](https://pypi.org/project/safety/)(python package vulnerability testing) (`nox -s safety`)
+         - [pytest](https://docs.pytest.org/en/latest/) sessions with
+           [pytest-cov](https://pypi.org/project/pytest-cov/) &
 ---
 
 ### Installation
