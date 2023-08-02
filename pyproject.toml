@@ -37,8 +37,9 @@ classifiers = [
 
 [tool.poetry.dependencies]
 python = "^3.10"
+Django = "4.2.4"
 cookiecutter = "^2.1.1"
-Django = "4.2.3"
+
 environs = { version = "^9.5.0", extras = ["django"] }
 django-allauth = "^0.54.0"
 django-model-utils = "^4.0.0"
