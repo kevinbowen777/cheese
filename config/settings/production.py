@@ -12,9 +12,7 @@ ALLOWED_HOSTS = env.list("DJANGO_ALLOWED_HOSTS", default=["cheese.com"])
 # ------------------------------------------------------------------------------
 DATABASES["default"] = env.db("DATABASE_URL")  # noqa: F405
 DATABASES["default"]["ATOMIC_REQUESTS"] = True  # noqa: F405
-DATABASES["default"]["CONN_MAX_AGE"] = env.int(  # noqa: F405
-    "CONN_MAX_AGE", default=60
-)
+DATABASES["default"]["CONN_MAX_AGE"] = env.int("CONN_MAX_AGE", default=60)  # noqa: F405
 
 # CACHES
 # ------------------------------------------------------------------------------
@@ -106,16 +104,14 @@ EMAIL_BACKEND = "anymail.backends.mailgun.EmailBackend"
 ANYMAIL = {
     "MAILGUN_API_KEY": env("MAILGUN_API_KEY"),
     "MAILGUN_SENDER_DOMAIN": env("MAILGUN_DOMAIN"),
-    "MAILGUN_API_URL": env(
-        "MAILGUN_API_URL", default="https://api.mailgun.net/v3"
-    ),
+    "MAILGUN_API_URL": env("MAILGUN_API_URL", default="https://api.mailgun.net/v3"),
 }
 
 
 # Collectfast
 # ------------------------------------------------------------------------------
 # https://github.com/antonagestam/collectfast#installation
-INSTALLED_APPS = ["collectfast"] + INSTALLED_APPS  # noqa: F405
+INSTALLED_APPS = ["collectfast"] + INSTALLED_APPS
 # LOGGING
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#logging
@@ -128,9 +124,7 @@ INSTALLED_APPS = ["collectfast"] + INSTALLED_APPS  # noqa: F405
 LOGGING = {
     "version": 1,
     "disable_existing_loggers": False,
-    "filters": {
-        "require_debug_false": {"()": "django.utils.log.RequireDebugFalse"}
-    },
+    "filters": {"require_debug_false": {"()": "django.utils.log.RequireDebugFalse"}},
     "formatters": {
         "verbose": {
             "format": "%(levelname)s %(asctime)s %(module)s "

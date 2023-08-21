@@ -4,7 +4,7 @@ from django.test import RequestFactory  # noqa:F401
 from django.urls import reverse
 from pytest_django.asserts import (  # noqa:F401
     assertContains,
-    assertRedirects,  # noqa:F401
+    assertRedirects,
 )
 
 from cheese.users.models import User  # noqa:F401
