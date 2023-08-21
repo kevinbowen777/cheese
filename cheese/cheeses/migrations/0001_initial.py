@@ -42,9 +42,7 @@ class Migration(migrations.Migration):
                 ),
                 (
                     "name",
-                    models.CharField(
-                        max_length=255, verbose_name="Name of Cheese"
-                    ),
+                    models.CharField(max_length=255, verbose_name="Name of Cheese"),
                 ),
                 (
                     "slug",
