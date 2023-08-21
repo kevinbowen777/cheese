@@ -97,35 +97,42 @@ exclude = '''
 )/
 '''
 
-[tool.coverage.paths]
-source = ["cheeses/users", "cheese/cheeses", "config/settings"]
-
 [tool.coverage.run]
 branch = true
-source = ["config"]
+# disable_warnings = ["already-imported", "module-not-imported"]
+dynamic_context = "test_function"
+source = ["cheese/users", "cheese/cheeses", "cheese/utils", "config/settings"]
 omit = [
+    "adapters.py",
+    "base.py",
+    "local.py",
+    "production.py",
+    "conftest.py",
+    "manage.py",
+    "settings.py",
+    "*test.py",
+    "asgi.py",
+    "gunicorn.py",
+    "wsgi.py",
     "*/__init__.py",
-    "*manage.py",
-    "*settings*.py",
-    "*urls.py",
-    "*admin.py",
-    "*migrations/*",
-    "*tests/*",
-    "*test_*.py",
-    "*tests.py",
-    "*wsgi.py",
-    "*conftest.py",
-    "*/extra*",
+    "*/migrations/*",
+    "*/factories.py",
+    "*/tests/*",
 ]
 plugins = [
     "django_coverage_plugin",
 ]
 
 [tool.coverage.django_coverage_plugin]
-template_extensions = "html, txt, tex, email"
+template_extensions = "html"
 
 [tool.coverage.report]
 show_missing = true
+precision = 2
+
+[tool.coverage.html]
+show_contexts = true
+title = "cheese coverage report"
 
 [tool.djlint]
 exclude="htmlcov"
