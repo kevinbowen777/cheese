@@ -44,7 +44,7 @@ environs = { version = "^9.5.0", extras = ["django"] }
 django-allauth = ">=0.54.0, < 0.60.0"
 django-model-utils = "^4.0.0"
 django-crispy-forms = "^2.0"
-crispy-bootstrap4 = "^2022.1"
+crispy-bootstrap4 = "^2023.1"
 django-autoslug = "^1.9.8"
 pytz = "^2023.3"
 python-slugify = "^8.0.0"
