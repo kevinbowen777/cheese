@@ -1,14 +1,14 @@
 import pytest
-from django.contrib.sessions.middleware import SessionMiddleware  # noqa:F401
-from django.test import RequestFactory  # noqa:F401
+
+# from django.contrib.sessions.middleware import SessionMiddleware  # noqa:F401
+# from django.test import RequestFactory  # noqa:F401
 from django.urls import reverse
 from pytest_django.asserts import (  # noqa:F401
     assertContains,
-    assertRedirects,
 )
 
-from cheese.users.models import User  # noqa:F401
-
+# assertRedirects,
+# from cheese.users.models import User  # noqa:F401
 from ..models import Cheese
 from ..views import (
     CheeseCreateView,
