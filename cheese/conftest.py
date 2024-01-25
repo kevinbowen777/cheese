@@ -1,7 +1,6 @@
 import pytest
 from django.test import RequestFactory
 
-from cheese.users.models import User
 from cheese.users.tests.factories import UserFactory
 
 
@@ -11,10 +10,10 @@ def media_storage(settings, tmpdir):
 
 
 @pytest.fixture
-def user() -> User:
+def user():
     return UserFactory()
 
 
 @pytest.fixture
-def request_factory() -> RequestFactory:
+def request_factory():
     return RequestFactory()

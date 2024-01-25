@@ -4,7 +4,19 @@ Base settings to build other settings files upon.
 
 from pathlib import Path
 
+from django_countries.widgets import LazyChoicesMixin
 from environs import Env
+
+# Added 20240125
+# monkey patch for error:
+# "AttributeError: 'BlankChoiceIterator' object has no attribute '__len__'. Did you
+# mean: '__le__'?" in cheese/cheeses/models.py Firmness TextChoices.
+# See open issue:
+# https://code.djangoproject.com/ticket/35046#comment:4
+LazyChoicesMixin.get_choices = lambda self: self._choices
+LazyChoicesMixin.choices = property(
+    LazyChoicesMixin.get_choices, LazyChoicesMixin.set_choices
+)
 
 # env.read_env()
 # import environ
