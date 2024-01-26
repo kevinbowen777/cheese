@@ -9,7 +9,7 @@ To install the ``cheese`` project, run the following command in your terminal:
 .. code-block:: console
 
    $ git clone https://github.com/kevinbowen777/cheese.git
-   $ cd cheese 
+   $ cd cheese
 
 Local installation
 ^^^^^^^^^^^^^^^^^^

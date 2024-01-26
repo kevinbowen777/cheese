@@ -80,6 +80,7 @@ pyopenssl = "^23.2.0"
 sphinx = ">= 7.2.5, < 7.3.0"
 furo = "^2023.5.20"
 djlint = "^1.32.1"
+sphinx-lint = "^0.9.1"
 
 [tool.black]
 line-length = 88
