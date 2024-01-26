@@ -5,7 +5,7 @@ The cheese_ project is basic Django 4.2.x web application for listing descriptio
 
 .. _django-start: https://github.com/kevinbowen777/django-start
 .. _Web Framework Projects: https://github.com/kevinbowen777/web-project-index
-.. _Cookiecutter: https://github.com/feldroy/django-crash-starter 
+.. _Cookiecutter: https://github.com/feldroy/django-crash-starter
 
 Getting Started
 ---------------
