@@ -132,5 +132,3 @@ On Mac:
 dropdb --if-exists cheese
 dropuser --if-exists myuser
 ```
-
-
