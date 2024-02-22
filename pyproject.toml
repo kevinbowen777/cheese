@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "cheese"
-version = "0.2.0"
+version = "0.3.0"
 description = "A cheese index application built with the Django web framework"
 authors = [
     "Kevin Bowen <kevin.bowen@gmail.com>",
@@ -18,7 +18,7 @@ documentation = "file:///docs/index.rst"
 keywords = ["django", "web-application", "cheese"]
 
 classifiers = [
-    "Development Status :: 2 - Pre-Alpha",
+    "Development Status :: 4 - Beta",
     "Environment :: Web Environment",
     "Framework :: Django",
     "Framework :: Django :: 5.0",
