@@ -21,7 +21,7 @@ classifiers = [
     "Development Status :: 2 - Pre-Alpha",
     "Environment :: Web Environment",
     "Framework :: Django",
-    "Framework :: Django :: 4.2",
+    "Framework :: Django :: 5.0",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
@@ -39,48 +39,49 @@ python = "^3.10"
 Django = "5.0.2"
 cookiecutter = "^2.1.1"
 
-django-allauth = ">=0.60, < 0.61"
-environs = { version = "^10", extras = ["django"] }
-django-model-utils = "^4.0.0"
 django-crispy-forms = "^2.0"
-crispy-bootstrap4 = "^2023.1"
+django-allauth = ">=0.60.0, < 0.70"
+environs = { version = "^10", extras = ["django"] }
+django-extensions = "^3.2"
+psycopg2-binary = "^2.9.5"
+whitenoise = "^6.1.0"
+django-model-utils = "^4.0.0"
 django-autoslug = "^1.9.8"
-pytz = "^2023.3"
+pytz = "^2024.0"
 python-slugify = "^8.0.0"
 Pillow = "^10.0"
-whitenoise = "^6.2.0"
 Unidecode = "^1.1.1"
 ipdb = "^0.13.3"
-psycopg2-binary = "^2.8.6"
-friendly = "^0.7.0"
-colorama = "^0.4.4"
 django-countries = "^7.3.2"
-django-extensions = "^3.2.0"
-django-types = "^0.19.0"
+crispy-bootstrap4 = "^2023.1"
 
 [tool.poetry.group.dev.dependencies]
-coverage = "^7.0.0"
-black = "^23.0.0"
-pylint-django = "^2.3.0"
+django-debug-toolbar = "^4.0.0"
 pre-commit = "^3.0.0"
+ruff = "^0.1.0"
+nox = "2023.4.22"
+black = "^24.0"
+pytest = "^8.0"
+pytest-cov = "^4.0.0"
+pytest-django = "^4.5.2"
+pytest-sugar = "^1.0"
+coverage = { version = "^7.0.0", extras = ["toml"] }
+django-coverage-plugin = "^3.0.0"
+djlint = "^1.31.0"
+sphinx-lint = "^0.9.1"
+safety = "^3.0"
+factory-boy = "^3.2.0"
+ipython = "^8.4.0"
+friendly = "^0.7.0"
+colorama = "^0.4.4"
+werkzeug = "^3.0"
+pyopenssl = ">=24.0, < 25.0"
+sphinx = ">= 7.2.5, < 7.3.0"
+furo = "^2024.0"
+pylint-django = "^2.3.0"
 mypy = "^1.0.0"
 django-stubs = "^4.0.0"
-pytest = "^7.1.2"
-pytest-sugar = "^0.9.4"
-factory-boy = "^3.2.0"
-django-debug-toolbar = "^4.0"
-django-coverage-plugin = "^3.0.0"
-pytest-django = "^4.5.2"
-nox = "^2023.4.22"
-safety = "^3.0"
-Sphinx = "^7.0"
-ruff = "^0.1.0"
-werkzeug = "^3.0"
-pyopenssl = "^23.2.0"
-sphinx = ">= 7.2.5, < 7.3.0"
-furo = "^2023.5.20"
-djlint = "^1.32.1"
-sphinx-lint = "^0.9.1"
+django-types = "^0.19.0"
 
 [tool.black]
 line-length = 88
@@ -184,7 +185,6 @@ DJANGO_SETTINGS_MODULE = "config.settings.test"
 addopts = "--reuse-db -p no:warnings"
 python_files = ["test_*.py"]
 filterwarnings = [
-    "ignore::django.utils.deprecation.RemovedInDjango50Warning",
     "ignore::django.utils.deprecation.RemovedInDjango51Warning",
 ]
 
