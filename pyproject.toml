@@ -39,28 +39,27 @@ python = "^3.10"
 Django = "5.0.2"
 cookiecutter = "^2.1.1"
 
-django-crispy-forms = "^2.0"
 django-allauth = ">=0.60.0, < 0.70"
 environs = { version = "^10", extras = ["django"] }
 django-extensions = "^3.2"
-psycopg2-binary = "^2.9.5"
 whitenoise = "^6.1.0"
+psycopg2-binary = "^2.9.5"
+Pillow = "^10.0"
+crispy-bootstrap4 = "^2024.0"
+django-crispy-forms = "^2.0"
+django-countries = "^7.3.2"
 django-model-utils = "^4.0.0"
 django-autoslug = "^1.9.8"
 pytz = "^2024.0"
 python-slugify = "^8.0.0"
-Pillow = "^10.0"
 Unidecode = "^1.1.1"
 ipdb = "^0.13.3"
-django-countries = "^7.3.2"
-crispy-bootstrap4 = "^2023.1"
 
 [tool.poetry.group.dev.dependencies]
 django-debug-toolbar = "^4.0.0"
 pre-commit = "^3.0.0"
 ruff = ">=0.1.0, <=0.2.9"
 nox = "2023.4.22"
-black = "^24.0"
 pytest = "^8.0"
 pytest-cov = "^4.0.0"
 pytest-django = "^4.5.2"
@@ -82,23 +81,6 @@ pylint-django = "^2.3.0"
 mypy = "^1.0.0"
 django-stubs = "^4.0.0"
 django-types = "^0.19.0"
-
-[tool.black]
-line-length = 88
-# include = [
-#]
-exclude = '''
-/(
-    \.git
-  | __pycache__
-  | .pytest_cache
-  | .venv
-  | staticfiles
-  | build
-  | dist
-  | ^.*\b(migrations)\b.*$
-)/
-'''
 
 [tool.coverage.run]
 branch = true
@@ -138,15 +120,16 @@ show_contexts = true
 title = "cheese coverage report"
 
 [tool.djlint]
-exclude=["htmlcov", "staticfiles"]
-files=["cheese/templates/"]
-indent=2
-max_line_length=120
+exclude= ["htmlcov", "staticfiles"]
+files = ["cheese/templates/"]
+indent = 2
+max_line_length = 120
 preserve_blank_lines=true
 
 [tool.pyright]
 include = ["config/settings", "cheese/cheeses", "cheese/users",]
-exclude = ["**/tests",
+exclude = [
+    "**/tests",
     "**/__pycache__",
     "**/migrations",
 ]
