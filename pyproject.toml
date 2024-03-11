@@ -15,7 +15,11 @@ homepage = "https://github.com/kevinbowen777/cheese.git"
 repository = "https://github.com/kevinbowen777/cheese.git"
 documentation = "file:///docs/index.rst"
 
-keywords = ["django", "web-application", "cheese"]
+keywords = [
+    "django",
+    "web-application",
+    "cheese",
+]
 
 classifiers = [
     "Development Status :: 4 - Beta",
@@ -36,7 +40,7 @@ classifiers = [
 
 [tool.poetry.dependencies]
 python = "^3.10"
-Django = "5.0.2"
+Django = "5.0.3"
 cookiecutter = "^2.1.1"
 
 django-allauth = ">=0.60.0, < 0.70"
@@ -58,7 +62,7 @@ ipdb = "^0.13.3"
 [tool.poetry.group.dev.dependencies]
 django-debug-toolbar = "^4.0.0"
 pre-commit = "^3.0.0"
-ruff = ">=0.1.0, <=0.2.9"
+ruff = ">=0.1.0, <=0.3.9"
 nox = "2023.4.22"
 pytest = "^8.0"
 pytest-cov = "^4.0.0"
@@ -86,7 +90,12 @@ django-types = "^0.19.0"
 branch = true
 # disable_warnings = ["already-imported", "module-not-imported"]
 dynamic_context = "test_function"
-source = ["cheese/users", "cheese/cheeses", "cheese/utils", "config/settings"]
+source = [
+    "cheese/users",
+    "cheese/cheeses",
+    "cheese/utils",
+    "config/settings",
+]
 omit = [
     "adapters.py",
     "base.py",
@@ -120,14 +129,18 @@ show_contexts = true
 title = "cheese coverage report"
 
 [tool.djlint]
-exclude= ["htmlcov", "staticfiles"]
+exclude = ["htmlcov", "staticfiles"]
 files = ["cheese/templates/"]
 indent = 2
 max_line_length = 120
-preserve_blank_lines=true
+preserve_blank_lines = true
 
 [tool.pyright]
-include = ["config/settings", "cheese/cheeses", "cheese/users",]
+include = [
+    "config/settings",
+    "cheese/cheeses",
+    "cheese/users",
+]
 exclude = [
     "**/tests",
     "**/__pycache__",
