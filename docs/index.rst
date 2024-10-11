@@ -1,7 +1,7 @@
 cheese
 ======
 
-The cheese_ project is basic Django 4.2.x web application for listing descriptions of various types of cheeses, their qualities, and country of origin. It is part of the collection of `Web Framework Projects`_ . This application is built using a Cookiecutter_ template.
+The cheese_ project is a basic Django 5.1.x web application for listing descriptions of various types of cheeses, their qualities, and country of origin. It is part of the collection of `Web Framework Projects`_ . This application is built using a Cookiecutter_ template.
 
 .. _django-start: https://github.com/kevinbowen777/django-start
 .. _Web Framework Projects: https://github.com/kevinbowen777/web-project-index
