@@ -4,13 +4,13 @@ version = "0.3.2"
 description = "A cheese index application built with the Django web framework"
 requires-python = ">=3.10.0, <3.14.0"
 dependencies = [
-    "Django (==5.1.4)",
+    "Django (==5.1.5)",
     "cookiecutter (==2.6.0)",
     "django-allauth (>=65.0, <66.0.0)",
     "environs[django] (>=11.0, <15.0)",
     "django-extensions (>=3.2.0, <3.3.0)",
     "whitenoise (>=6.8.0, <6.9.0)",
-    "psycopg[binary] (==3.2.3)",
+    "psycopg[binary] (==3.2.4)",
     "Pillow (>=11.0, <12.0)",
     # crispy-bootstrap4 uses calver, so version is unclamped
     "crispy-bootstrap4 (>=2024.10)",
@@ -58,7 +58,7 @@ Repository = "https://github.com/kevinbowen777/cheese.git"
 Documentation = "file:///docs/_build/index.html"
 
 [tool.poetry.group.dev.dependencies]
-django-debug-toolbar = ">=4.0.0, <5.0.0"
+django-debug-toolbar = ">=5.0.0, <6.0.0"
 pre-commit = ">=4.0, <5.0"
 ruff = ">=0.8, <1.0"
 nox = "2024.10.09"
@@ -79,7 +79,7 @@ furo = ">=2024.0, <2025.0"
 django-types = ">=0.20.0, <0.21.0"
 pylint-django = "2.6.1"
 mypy = "1.14.1"
-django-stubs = "5.1.1"
+django-stubs = "5.1.2"
 
 [tool.poetry.requires-plugins]
 poetry-plugin-export = ">=1.8"
