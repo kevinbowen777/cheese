@@ -4,12 +4,12 @@ version = "0.3.2"
 description = "A cheese index application built with the Django web framework"
 requires-python = ">=3.10.0, <3.14.0"
 dependencies = [
-    "Django (==5.1.5)",
+    "Django (==5.1.6)",
     "cookiecutter (==2.6.0)",
     "django-allauth (>=65.0, <66.0.0)",
     "environs[django] (>=11.0, <15.0)",
     "django-extensions (>=3.2.0, <3.3.0)",
-    "whitenoise (>=6.8.0, <6.9.0)",
+    "whitenoise (>=6.9.0, <7.0.0)",
     "psycopg[binary] (==3.2.4)",
     "Pillow (>=11.0, <12.0)",
     # crispy-bootstrap4 uses calver, so version is unclamped
@@ -18,7 +18,7 @@ dependencies = [
     "django-countries (>=7.3.2, <7.7.0)",
     "django-model-utils (>=5.0.0, <6.0.0)",
     "django-autoslug (==1.9.9)",
-    "pytz (==2024.2)",
+    "pytz (==2025.1)",
     "python-slugify (==8.0.4)",
     "Unidecode (==1.3.8)",
 ]
@@ -72,13 +72,13 @@ sphinx = ">= 8.0, <9.0"
 djlint = ">=1.31.0, <1.40.0"
 sphinx-lint = "1.0"
 safety = "3.2.3"
-factory-boy = "3.3.1"
+factory-boy = "3.3.3"
 werkzeug = ">=3.1, <4.0"
 pyopenssl = ">=24.0, <26.0"
 furo = ">=2024.0, <2025.0"
 django-types = ">=0.20.0, <0.21.0"
 pylint-django = "2.6.1"
-mypy = "1.14.1"
+mypy = "1.15.0"
 django-stubs = "5.1.2"
 
 [tool.poetry.requires-plugins]
@@ -217,6 +217,7 @@ exclude = [
 
 [tool.ruff.lint]
 select = [
+    "A",    # flake8-builtins
     "B",    # flake8-bugbear
     "C90",  # mccabe
     "DJ",   # flake8-django
@@ -253,6 +254,7 @@ dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
 "cheese/users/adapters.py" = ["I001"]
 "cheese/users/admin.py" = ["I001"]
 "manage.py" = ["I001"]
+"docs/conf.py" = ["A001"]
 
 [tool.ruff.lint.mccabe]
 # Unlike Flake8, default to a complexity level of 10.
