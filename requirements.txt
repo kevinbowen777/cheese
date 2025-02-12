@@ -127,8 +127,8 @@ dj-email-url==1.0.6 ; python_full_version >= "3.10.0" and python_full_version < 
 django==5.1.6 ; python_version >= "3.10" and python_full_version < "3.14.0" \
     --hash=sha256:1e39eafdd1b185e761d9fab7a9f0b9fa00af1b37b25ad980a8aa0dac13535690 \
     --hash=sha256:8d203400bc2952fbfb287c2bbda630297d654920c72a73cc82a9ad7926feaad5
-django-allauth==65.4.0 ; python_full_version >= "3.10.0" and python_full_version < "3.14.0" \
-    --hash=sha256:1b6eb5d4a781a9a18dcd5ccf2bcae7ae542a56baea8e7b8f33a54c743cb54b0a
+django-allauth==65.4.1 ; python_full_version >= "3.10.0" and python_full_version < "3.14.0" \
+    --hash=sha256:60b32aef7dbbcc213319aa4fd8f570e985266ea1162ae6ef7a26a24efca85c8c
 django-autoslug==1.9.9 ; python_full_version >= "3.10.0" and python_full_version < "3.14.0" \
     --hash=sha256:79f88e9433c1c88d8d3f2bec60d65ca98bffaff6c072b78aa5fd99d0e84a13dd \
     --hash=sha256:81cb018944498f27f439d439687cf902212cafbdb8c74c8ca0307543a3d82907
@@ -147,9 +147,9 @@ django-extensions==3.2.3 ; python_full_version >= "3.10.0" and python_full_versi
 django-model-utils==5.0.0 ; python_full_version >= "3.10.0" and python_full_version < "3.14.0" \
     --hash=sha256:041cdd6230d2fbf6cd943e1969318bce762272077f4ecd333ab2263924b4e5eb \
     --hash=sha256:fec78e6c323d565a221f7c4edc703f4567d7bb1caeafe1acd16a80c5ff82056b
-environs==14.1.0 ; python_full_version >= "3.10.0" and python_full_version < "3.14.0" \
-    --hash=sha256:a5f2afe9d5a21b468e74a3cceacf5d2371fd67dbb9a7e54fe62290c75a09cdfa \
-    --hash=sha256:a7edda1668ddf1fbfcb7662bdc242dac25648eff2c7fdbaa5d959693afed7a3e
+environs==14.1.1 ; python_full_version >= "3.10.0" and python_full_version < "3.14.0" \
+    --hash=sha256:03db7ee2d50ec697b68814cd175a3a05a7c7954804e4e419ca8b570dc5a835cf \
+    --hash=sha256:45bc56f1d53bbc59d8dd69bba97377dd88ec28b8229d81cedbd455b21789445b
 idna==3.10 ; python_full_version >= "3.10.0" and python_full_version < "3.14.0" \
     --hash=sha256:12f65c9b470abda6dc35cf8e63cc574b1c52b11df2c86030af0ac09b01b13ea9 \
     --hash=sha256:946d195a0d259cbba61165e88e65941f16e9b36ea6ddb97f00452bae8b1287d3
