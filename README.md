@@ -32,7 +32,7 @@ cheese is a basic demonstration of Django functionality using a [Cookiecutter](h
      - For additional links to package resources used in this repository, see the [Package Index](docs/package_index.md)
  - Dev/testing
      - Basic module testing templates
-     - [Coverage](https://kevinbowen777.github.io/cheese/) reports on web.
+     - [Coverage](https://kevinbowen777.github.io/cheese/) reports on web
      - [Debug-toolbar](https://pypi.org/project/django-debug-toolbar/) available. See notes in `config/settings.py` for enabling.
      - Examples of using [Factories](https://pypi.org/project/factory-boy/) & [pytest](https://pypi.org/project/pytest/) fixtures in account app testing
      - [shell_plus](https://django-extensions.readthedocs.io/en/latest/shell_plus.html) via [django-extensions](https://pypi.python.org/pypi/django-extensions/) package
@@ -87,18 +87,21 @@ cheese is a basic demonstration of Django functionality using a [Cookiecutter](h
          - `pre-commit install`
      - To update the pre-commit hooks, run the following command:
          - `pre-commit autoupdate`
+ - Documentation
+     - `nox -s docs-3.13`
+     - Open browser to `docs/_build/index.html`
 
 ---
 
 ### Testing
  - `docker compose exec web python manage.py test`
  - `coverage run -m pytest`
- - Nox (includes sessions for coverage, lint, safety, tests)
+ - Nox (includes sessions for coverage, docs, lint, pyright, safety, tests)
      - testing supported for Python 3.10, 3.11, 3.12, 3.13
      - e.g. `nox`, `nox -rs lint-3.13`, `nox -s tests`
        - `nox`
-       - `nox -s coverage-3.13`
-       - `nox -s docs-3.11`
+       - `nox -s coverage-3.12`
+       - `nox -s docs-3.13`
        - `nox -rs lint-3.10` (Use the 'r' flag to reuse existing session)
        - `nox -s pyright-3.12`
        - `nox -s safety` (will run tests against all Python versions)
