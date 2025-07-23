@@ -75,10 +75,10 @@ factory-boy = "3.3.3"
 werkzeug = ">=3.1, <4.0"
 pyopenssl = ">=24.0, <26.0"
 furo = ">=2024.0, <2025.0"
-django-types = ">=0.21.0, <0.22.0"
+django-types = ">=0.22.0, <0.23.0"
 pylint-django = "2.6.1"
-mypy = "1.16.1"
-django-stubs = "5.2.1"
+mypy = "1.17.0"
+django-stubs = "5.2.2"
 pip-audit = "^2.9.0"
 
 [tool.poetry.requires-plugins]
