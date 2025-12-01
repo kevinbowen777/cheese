@@ -19,9 +19,9 @@ attrs==25.4.0 ; python_version >= "3.11" and python_full_version < "3.15.0" \
 babel==2.17.0 ; python_version >= "3.11" and python_full_version < "3.15.0" \
     --hash=sha256:0c54cffb19f690cdcc52a3b50bcbf71e07a808d1c80d549f2459b9d2cf0afb9d \
     --hash=sha256:4d0b53093fdfb4b21c92b5213dba5a1b23885afa8383709427046b21c366e5f2
-beautifulsoup4==4.14.2 ; python_full_version >= "3.11.0" and python_full_version < "3.15.0" \
-    --hash=sha256:2a98ab9f944a11acee9cc848508ec28d9228abfd522ef0fad6a02a72e0ded69e \
-    --hash=sha256:5ef6fa3a8cbece8488d66985560f97ed091e22bbc4e9c2338508a9d5de6d4515
+beautifulsoup4==4.14.3 ; python_full_version >= "3.11.0" and python_full_version < "3.15.0" \
+    --hash=sha256:0918bfe44902e6ad8d57732ba310582e98da931428d231a5ecb9e7c703a735bb \
+    --hash=sha256:6292b1c5186d356bba669ef9f7f051757099565ad9ada5dd630bd9de5fa7fb86
 binaryornot==0.4.4 ; python_full_version >= "3.11.0" and python_full_version < "3.15.0" \
     --hash=sha256:359501dfc9d40632edc9fac890e19542db1a287bbcfa58175b66658392018061 \
     --hash=sha256:b8b71173c917bddcd2c16070412e369c3ed7f0528926f70cac18a6c97fd563e4
@@ -447,9 +447,9 @@ django-coverage-plugin==3.2.0 ; python_version >= "3.11" and python_full_version
 django-crispy-forms==2.5 ; python_version >= "3.11" and python_full_version < "3.15.0" \
     --hash=sha256:066e72a8f152a1334f1c811cc37740868efe3265e5a218f79079ef89f848c3d8 \
     --hash=sha256:adc99d5901baca09479c53bf536b3909e80a9f2bb299438a223de4c106ebf1f9
-django-debug-toolbar==5.2.0 ; python_version >= "3.11" and python_full_version < "3.15.0" \
-    --hash=sha256:15627f4c2836a9099d795e271e38e8cf5204ccd79d5dbcd748f8a6c284dcd195 \
-    --hash=sha256:9e7f0145e1a1b7d78fcc3b53798686170a5b472d9cf085d88121ff823e900821
+django-debug-toolbar==6.1.0 ; python_version >= "3.11" and python_full_version < "3.15.0" \
+    --hash=sha256:e214dea4494087e7cebdcea84223819c5eb97f9de3110a3665ad673f0ba98413 \
+    --hash=sha256:e962ec350c9be8bdba918138e975a9cdb193f60ec396af2bb71b769e8e165519
 django-extensions==4.1 ; python_version >= "3.11" and python_full_version < "3.15.0" \
     --hash=sha256:0699a7af28f2523bf8db309a80278519362cd4b6e1fd0a8cd4bf063e1e023336 \
     --hash=sha256:7b70a4d28e9b840f44694e3f7feb54f55d495f8b3fa6c5c0e5e12bcb2aa3cdeb
