@@ -72,17 +72,17 @@ pytest-django = ">=4.5.2, <5.0.0"
 pytest-sugar = "1.1.1"
 coverage = { version = ">=7.0.0, <8.0.0", extras = ["toml"] }
 django-coverage-plugin = ">=3.2.0, <3.3.0"
-sphinx = ">= 8.0, <9.0"
+sphinx = ">=8.0, <9.0"
 djlint = ">=1.31.0, <1.40.0"
-sphinx-lint = "1.0"
+sphinx-lint = "1.0.2"
 factory-boy = "3.3.3"
 werkzeug = ">=3.1, <4.0"
 pyopenssl = ">=24.0, <26.0"
-furo = ">=2024.0, <2025.0"
+furo = "2025.9.25"
 django-types = ">=0.22.0, <0.23.0"
 pylint-django = "2.6.1"
 mypy = "1.19.0"
-django-stubs = "5.2.7"
+django-stubs = "5.2.8"
 pip-audit = "^2.9.0"
 
 [tool.poetry.requires-plugins]
@@ -258,7 +258,7 @@ dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
 "cheese/users/adapters.py" = ["I001"]
 "cheese/users/admin.py" = ["I001"]
 "manage.py" = ["I001"]
-"docs/conf.py" = ["A001"]
+"docs/source/conf.py" = ["A001"]
 
 [tool.ruff.lint.mccabe]
 # Unlike Flake8, default to a complexity level of 10.
