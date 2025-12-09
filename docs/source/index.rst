@@ -1,7 +1,7 @@
 cheese
 ======
 
-The cheese_ project is a basic Django 5.1.x web application for listing descriptions of various types of cheeses, their qualities, and country of origin. It is part of the collection of `Web Framework Projects`_ . This application is built using a Cookiecutter_ template.
+The cheese_ project is a basic Django 5.2.x web application for listing descriptions of various types of cheeses, their qualities, and country of origin. It is part of the collection of `Web Framework Projects`_ . This application is built using a Cookiecutter_ template.
 
 .. _django-start: https://github.com/kevinbowen777/django-start
 .. _Web Framework Projects: https://github.com/kevinbowen777/web-project-index
@@ -10,15 +10,14 @@ The cheese_ project is a basic Django 5.1.x web application for listing descript
 Getting Started
 ---------------
 
-:doc:`features`
-    Outline of the project's basic functionality.
+:doc:`installation/index`
+    How to install the project directly on your local machine, or in a Docker container.
 
-:doc:`configuring`
+:doc:`configuration/index`
     Project configuration and customization options.
 
-:doc:`installing`
-    How to install the project directly on your local machine, or in a Docker
-    container.
+:doc:`features/index`
+    Outline of the project's basic functionality.
 
 Project Information
 -------------------
@@ -33,34 +32,30 @@ Project Information
 :doc:`license`
     Terms and conditions for use of this project.
 
-:doc:`testing`
+:doc:`testing/index`
     Instructions for running tests against the project.
 
-.. Hidden TOCs
-
 .. toctree::
-   :caption: Project Documentation
-   :maxdepth: 2
+   :caption: Getting Started
    :hidden:
+   :maxdepth: 2
 
-   features
-   installing
-   configuring
-   package_index
+   installation/index
+   configuration/index
+   features/index
 
 .. toctree::
    :caption: Testing
-   :maxdepth: 1
    :hidden:
 
-   testing
-   create_new_users
+   testing/index
+   testing/create_new_users
 
 .. toctree::
    :caption: Reference
-   :maxdepth: 1
    :hidden:
 
+   features/package_index
    changelog
    contributing
    license
