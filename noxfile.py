@@ -11,7 +11,7 @@ locations = (
     "config",
     "cheese/cheeses",
     "./noxfile.py",
-    "docs/conf.py",
+    "docs/source/conf.py",
 )
 
 
