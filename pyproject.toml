@@ -81,7 +81,7 @@ pyopenssl = ">=24.0, <26.0"
 furo = "2025.9.25"
 django-types = ">=0.22.0, <0.23.0"
 pylint-django = "2.6.1"
-mypy = "1.19.0"
+mypy = "1.19.1"
 django-stubs = "5.2.8"
 pip-audit = "^2.9.0"
 
