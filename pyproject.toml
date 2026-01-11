@@ -4,7 +4,7 @@ version = "0.3.4"
 description = "A cheese index application built with the Django web framework"
 requires-python = ">=3.11.0"
 dependencies = [
-    "Django (==5.2.9)",
+    "Django (==5.2.10)",
     "cookiecutter (==2.6.0)",
     "django-allauth (>=65.0, <66.0.0)",
     "environs[django] (>=11.0, <15.0)",
@@ -80,7 +80,7 @@ werkzeug = ">=3.1, <4.0"
 pyopenssl = ">=24.0, <26.0"
 furo = "2025.9.25"
 django-types = ">=0.22.0, <0.23.0"
-pylint-django = "2.6.1"
+pylint-django = "2.7.0"
 mypy = "1.19.1"
 django-stubs = "5.2.8"
 pip-audit = "^2.9.0"
