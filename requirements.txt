@@ -161,9 +161,9 @@ dj-email-url==1.0.6 ; python_full_version >= "3.11.0" and python_full_version < 
 django==5.2.13 ; python_version >= "3.11" and python_full_version < "3.15.0" \
     --hash=sha256:5788fce61da23788a8ce6f02583765ab060d396720924789f97fa42119d37f7a \
     --hash=sha256:a31589db5188d074c63f0945c3888fad104627dfcc236fb2b97f71f89da33bc4
-django-allauth==65.15.1 ; python_version >= "3.11" and python_full_version < "3.15.0" \
-    --hash=sha256:94c5b9df0c3458019613983ba9e938518acf5c2e4cc6e0f262fc3684ffe45a95 \
-    --hash=sha256:c32a1031f5601cb66b0aba276fb482d5d1460045a8094795a4db2af0231ee432
+django-allauth==65.16.0 ; python_version >= "3.11" and python_full_version < "3.15.0" \
+    --hash=sha256:7a94857146f8dfe810da1ab78514792e5f7ddb115c22d054e04c1ef18112af32 \
+    --hash=sha256:e65d4aa4ed754c634d0f381dc58c6bbe2a0453f9a26d5bf7f138eee86919dc7e
 django-autoslug==1.9.9 ; python_full_version >= "3.11.0" and python_full_version < "3.15.0" \
     --hash=sha256:79f88e9433c1c88d8d3f2bec60d65ca98bffaff6c072b78aa5fd99d0e84a13dd \
     --hash=sha256:81cb018944498f27f439d439687cf902212cafbdb8c74c8ca0307543a3d82907
@@ -533,9 +533,9 @@ pyyaml==6.0.3 ; python_version >= "3.11" and python_full_version < "3.15.0" \
 requests==2.33.1 ; python_version >= "3.11" and python_full_version < "3.15.0" \
     --hash=sha256:18817f8c57c6263968bc123d237e3b8b08ac046f5456bd1e307ee8f4250d3517 \
     --hash=sha256:4e6d1ef462f3626a1f0a0a9c42dd93c63bad33f9f1c1937509b8c5c8718ab56a
-rich==14.3.4 ; python_full_version >= "3.11.0" and python_full_version < "3.15.0" \
-    --hash=sha256:07e7adb4690f68864777b1450859253bed81a99a31ac321ac1817b2313558952 \
-    --hash=sha256:817e02727f2b25b40ef56f5aa2217f400c8489f79ca8f46ea2b70dd5e14558a9
+rich==15.0.0 ; python_full_version >= "3.11.0" and python_full_version < "3.15.0" \
+    --hash=sha256:33bd4ef74232fb73fe9279a257718407f169c09b78a87ad3d296f548e27de0bb \
+    --hash=sha256:edd07a4824c6b40189fb7ac9bc4c52536e9780fbbfbddf6f1e2502c31b068c36
 six==1.17.0 ; python_version >= "3.11" and python_full_version < "3.15.0" \
     --hash=sha256:4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274 \
     --hash=sha256:ff70335d468e7eb6ec65b95b99d3a2836546063f63acc5171de367e834932a81
