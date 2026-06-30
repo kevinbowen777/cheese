@@ -67,29 +67,27 @@ cheese is a basic demonstration of Django functionality using a [Cookiecutter](h
 - `git clone https://github.com/kevinbowen777/cheese.git`
 - `cd cheese`
 - Local installation:
-- `poetry shell`
-- `poetry install`
-- `createdb cheeses` (Requires Postgresql 15)
-- `python manage.py migrate`
-- `python manage.py createsuperuser`
-- `python manage.py runserver`
+    - `poetry shell`
+    - `poetry install`
+    - `createdb cheeses` (Requires Postgresql 15)
+    - `python manage.py migrate`
+    - `python manage.py createsuperuser`
+    - `python manage.py runserver`
 - Docker installation:
-- `docker compose up --build`
-- `docker compose build --build-arg "ENV=DEV"` (include testing/dev dependencies)
-- `docker compose build --build-arg "ENV=PROD"`
-- `docker compose exec web python manage.py migrate`
-- `docker compose exec web python manage.py createsuperuser`
-     Additional commands:
-    - `docker compose exec web python manage.py shell_plus`
-         (loads Django shell autoloading project models & classes)
-    - `docker run -it django-start-web bash`
-         (CLI access to container)
+    - `docker compose up --build`
+    - `docker compose build --build-arg "ENV=DEV"` (include testing/dev dependencies)
+    - `docker compose build --build-arg "ENV=PROD"`
+    - `docker compose exec web python manage.py migrate`
+    - `docker compose exec web python manage.py createsuperuser`
+- Additional commands:
+    - `docker compose exec web python manage.py shell_plus` (loads Django shell autoloading project models & classes)
+    - `docker run -it django-start-web bash` (CLI access to container)
 - Browse to <http://127.0.0.1:8000> or <http://127.0.0.1:8000/resources/>
 - Pre-commit:
-- To add the hook, run the following command in the poetry shell:
-    - `pre-commit install`
-- To update the pre-commit hooks, run the following command:
-    - `pre-commit autoupdate`
+    - To add the hook, run the following command in the poetry shell:
+        - `pre-commit install`
+    - To update the pre-commit hooks, run the following command:
+        - `pre-commit autoupdate`
 - Documentation
 - `nox -s docs-3.13`
 - Open browser to `docs/_build/index.html`
