@@ -35,7 +35,6 @@ SITE_ID = 1
 # https://docs.djangoproject.com/en/dev/ref/settings/#use-i18n
 USE_I18N = True
 # https://docs.djangoproject.com/en/dev/ref/settings/#use-l10n
-USE_L10N = True
 # https://docs.djangoproject.com/en/dev/ref/settings/#use-tz
 USE_TZ = True
 # https://docs.djangoproject.com/en/dev/ref/settings/#locale-paths
@@ -259,7 +258,7 @@ EMAIL_TIMEOUT = 5
 # Django Admin URL.
 ADMIN_URL = "resources/"
 # https://docs.djangoproject.com/en/dev/ref/settings/#admins
-ADMINS = [("Kevin Bowen", "kevin.bowen@gmail.com")]
+ADMINS = ["kevin.bowen@gmail.com"]
 # https://docs.djangoproject.com/en/dev/ref/settings/#managers
 MANAGERS = ADMINS
 
@@ -324,4 +323,3 @@ SOCIALACCOUNT_ADAPTER = "cheese.users.adapters.SocialAccountAdapter"
 # Your stuff...
 # ------------------------------------------------------------------------------
 # Needed after upgrade to Django 3.2.14
-DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
