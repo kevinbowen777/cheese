@@ -121,6 +121,12 @@ cheese is a basic demonstration of Django functionality using a [Cookiecutter](h
 
 ---
 
+### Contributions
+
+You are free to fork this repository and modify as you see fit. See
+[CONTRIBUTING](https://github.com/kevinbowen777/cheese/CONTRIBUTING) for details on reporting issues, etc.
+
+
 ### Reporting Bugs
 
    Visit the [Issues page](https://github.com/kevinbowen777/cheese/issues)

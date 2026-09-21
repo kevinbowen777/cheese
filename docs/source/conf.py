@@ -4,17 +4,19 @@
 project = "cheese"
 author = "Kevin Bowen"
 copyright = f"%Y, {author}"
-release = "0.3.4"
+release = "0.3.7"
 
 # -- General configuration --------------------------------------------
 extensions = [
     "sphinx.ext.duration",
     # External extensions
+    "myst_parser",
 ]
 templates_path = ["_templates"]
 exclude_patterns = []
 source_suffix = {
     ".rst": "restructuredtext",
+    ".md": "markdown",
 }
 
 # -- Options for HTML output -----------------------------------------

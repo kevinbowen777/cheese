@@ -1,16 +1,16 @@
 [project]
 name = "cheese"
-version = "0.3.6"
+version = "0.3.7"
 description = "A cheese index application built with the Django web framework"
 requires-python = ">=3.12.0"
 dependencies = [
     "Django (==6.1.1)",
     "cookiecutter (==2.7.1)",
-    "django-allauth (==65.19.3)",
+    "django-allauth (==65.19.4)",
     "environs[django] (==15.2.0)",
     "django-extensions (==4.1.0)",
     "whitenoise (==6.12.0)",
-    "psycopg[binary] (==3.3.5)",
+    "psycopg[binary] (==3.3.6)",
     "Pillow (==12.3.0)",
     "crispy-bootstrap4 (==2026.2)",
     "django-crispy-forms (==2.7)",
@@ -18,7 +18,7 @@ dependencies = [
     "django-model-utils (==5.0.0)",
     "django-autoslug (==1.9.9)",
     "pytz (==2026.3.post1)",
-    "python-slugify (==9.0.0)",
+    "python-slugify (==9.1.0)",
     "Unidecode (==1.4.0)",
 ]
 authors = [
@@ -49,7 +49,7 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://github.com/kevinbowen777/cheese.git"
-Changelog = "https://github.com/kevinbowen777/cheese/NEWS"
+Changelog = "https://github.com/kevinbowen777/cheese/CHANGELOG.rst"
 Repository = "https://github.com/kevinbowen777/cheese.git"
 Documentation = "file:///docs/html/index.html"
 
@@ -80,9 +80,10 @@ furo = "2025.12.19"
 django-types = ">=0.24.0, <0.25.0"
 pylint-django = "2.8.0"
 mypy = "2.3.1"
-django-stubs = "6.1.0"
+django-stubs = "6.1.1"
 pip-audit = "2.10.1"
 towncrier = "26.9.0"
+myst-parser = "5.1.0"
 
 [tool.poetry.requires-plugins]
 poetry-plugin-export = ">=1.10.0"
@@ -292,7 +293,7 @@ docstring-code-line-length = "dynamic"
 
 [tool.towncrier]
 directory = "changelog/"
-filename = "CHANGELOG.rst"
+filename = "docs/source/changelog.rst"
 
 title_format = "cheese {version} ({project_date})"
 issue_format = "`#{issue} <https://github.com/kevinbowen777/cheese/{issue}>`_"
