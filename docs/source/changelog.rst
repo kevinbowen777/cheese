@@ -27,6 +27,30 @@ with advance notice in the **Deprecations** section of releases.
 
 .. towncrier release notes start
 
+cheese 0.3.8 (2026-10-08)
+=========================
+
+Security updated
+----------------
+
+-  (`#527 <https://github.com/kevinbowen777/cheese/527>`_): Update django-allauth to 65.19.7
+
+-  (`#528 <https://github.com/kevinbowen777/cheese/528>`_): Update Django to 6.1.2
+
+
+Contributor-facing changes
+--------------------------
+
+-  (`#527 <https://github.com/kevinbowen777/cheese/527>`_): Update djlint to 1.46.4
+
+-  (`#527 <https://github.com/kevinbowen777/cheese/527>`_): Update testing for Python 3.14.8, 3.13.16, 3.12.15
+
+-  (`#527 <https://github.com/kevinbowen777/cheese/527>`_): Update werkzeug to 3.1.9
+
+-  (`#529 <https://github.com/kevinbowen777/cheese/529>`_): Fix Factory DeprecationWarning
+
+-  (`#530 <https://github.com/kevinbowen777/cheese/530>`_): Fix CentralCovContextWarning
+
 cheese 0.3.7 (2026-09-21)
 =========================
 
