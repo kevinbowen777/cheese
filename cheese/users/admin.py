@@ -1,12 +1,13 @@
-from cheese.users.forms import (
-    UserChangeForm,
-    UserCreationForm,
-)
+from typing import ClassVar
 
 from django.contrib import admin
 from django.contrib.auth import admin as auth_admin
 from django.contrib.auth import get_user_model
 
+from cheese.users.forms import (
+    UserChangeForm,
+    UserCreationForm,
+)
 
 User = get_user_model()
 
@@ -16,5 +17,5 @@ class UserAdmin(auth_admin.UserAdmin):
     form = UserChangeForm
     add_form = UserCreationForm
     fieldsets = (("User", {"fields": ("name",)}),) + auth_admin.UserAdmin.fieldsets
-    list_display = ["username", "name", "is_superuser"]
-    search_fields = ["name"]
+    list_display: ClassVar[list[str]] = ["username", "name", "is_superuser"]
+    search_fields: ClassVar[list[str]] = ["name"]
