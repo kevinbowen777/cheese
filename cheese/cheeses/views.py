@@ -1,3 +1,5 @@
+from typing import ClassVar
+
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import CreateView, DetailView, ListView, UpdateView
 
@@ -14,7 +16,12 @@ class CheeseDetailView(DetailView):
 
 class CheeseCreateView(LoginRequiredMixin, CreateView):
     model = Cheese
-    fields = ["name", "description", "firmness", "country_of_origin"]
+    fields: ClassVar[list[str]] = [
+        "name",
+        "description",
+        "firmness",
+        "country_of_origin",
+    ]
 
     def form_valid(self, form):
         form.instance.creator = self.request.user
@@ -23,5 +30,10 @@ class CheeseCreateView(LoginRequiredMixin, CreateView):
 
 class CheeseUpdateView(LoginRequiredMixin, UpdateView):
     model = Cheese
-    fields = ["name", "description", "firmness", "country_of_origin"]
+    fields: ClassVar[list[str]] = [
+        "name",
+        "description",
+        "firmness",
+        "country_of_origin",
+    ]
     action = "Update"

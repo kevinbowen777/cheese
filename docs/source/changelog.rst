@@ -27,6 +27,38 @@ with advance notice in the **Deprecations** section of releases.
 
 .. towncrier release notes start
 
+cheese 0.3.9 (2026-10-23)
+=========================
+
+Security updated
+----------------
+
+-  (`#532 <https://github.com/kevinbowen777/cheese/532>`_): Update pillow to 13.0.0
+
+-  (`#532 <https://github.com/kevinbowen777/cheese/532>`_): Update .python-versions 3.14.9, 3.13.17
+
+-  (`#532 <https://github.com/kevinbowen777/cheese/532>`_): Update django-allauth to 65.20.1
+
+-  (`#532 <https://github.com/kevinbowen777/cheese/532>`_): Update certifi to 2026.10.19
+
+-  (`#532 <https://github.com/kevinbowen777/cheese/532>`_): Update pip to 26.2.2
+
+
+Improved documentation
+----------------------
+
+-  (`#532 <https://github.com/kevinbowen777/cheese/532>`_): Remove legacy license classifier
+
+
+Contributor-facing changes
+--------------------------
+
+-  (`#532 <https://github.com/kevinbowen777/cheese/532>`_): Update nox to 2026.10.20
+
+-  (`#532 <https://github.com/kevinbowen777/cheese/532>`_): Update djlint to 1.47.0
+
+-  (`#532 <https://github.com/kevinbowen777/cheese/532>`_): Update ruff rules & fix reported errors
+
 cheese 0.3.8 (2026-10-08)
 =========================
 

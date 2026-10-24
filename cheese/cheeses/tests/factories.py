@@ -1,9 +1,9 @@
 import pytest
+from django.template.defaultfilters import slugify
 from factory.declarations import LazyAttribute, SubFactory
 from factory.django import DjangoModelFactory
 from factory.faker import Faker
 from factory.fuzzy import FuzzyChoice, FuzzyText
-from django.template.defaultfilters import slugify
 
 from cheese.users.tests.factories import UserFactory
 
