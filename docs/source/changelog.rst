@@ -27,6 +27,30 @@ with advance notice in the **Deprecations** section of releases.
 
 .. towncrier release notes start
 
+cheese 0.3.10 (2026-11-09)
+==========================
+
+Security updated
+----------------
+
+-  (`#534 <https://github.com/kevinbowen777/cheese/534>`_): Update psycopg to 3.3.8
+
+-  (`#534 <https://github.com/kevinbowen777/cheese/534>`_): Update .python-version with 3.14.10, 3.13.18, 3.12.16
+
+-  (`#534 <https://github.com/kevinbowen777/cheese/534>`_): Update pip to 26.3
+
+-  (`#534 <https://github.com/kevinbowen777/cheese/534>`_): Update Django to 6.1.3
+
+-  (`#534 <https://github.com/kevinbowen777/cheese/534>`_): Update django-allauth to 65.21.1
+
+
+Contributor-facing changes
+--------------------------
+
+-  (`#534 <https://github.com/kevinbowen777/cheese/534>`_): Update coverage to 7.17.2
+
+-  (`#534 <https://github.com/kevinbowen777/cheese/534>`_): Update djlint to 1.49.10
+
 cheese 0.3.9 (2026-10-23)
 =========================
 
