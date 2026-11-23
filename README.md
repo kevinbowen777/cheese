@@ -20,6 +20,7 @@ cheese is a basic demonstration of Django functionality using a [Cookiecutter](h
 - [Testing](#testing)
 - [Application Demo](#application-demo)
 - [Screenshots](#screenshots)
+- [Contributions](#contributions)
 - [Reporting Bugs](#reporting-bugs)
 
 ---
